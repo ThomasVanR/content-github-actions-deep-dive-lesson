@@ -51,8 +51,6 @@ jobs:
     steps:
       - name: Checkout codes
         uses: actions/checkout@v2
-      - name: Create docs folder
-        run: mkdir docs
       - name: Convert md to html
         uses: docker://pandoc/core:2.9
         with:
