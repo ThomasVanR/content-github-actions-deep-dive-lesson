@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: lint
     steps:
-      - name: Checkout code
+      - name: Checkout codes
         uses: actions/checkout@v2
       - name: Create docs folder
         run: mkdir docs
